@@ -1,0 +1,1 @@
+<li><a href="#" data-group="{{$category->slug}}">{{$category->name}}</a></li>
