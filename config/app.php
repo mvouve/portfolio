@@ -12,6 +12,10 @@ return [
      */
     'email' => 'mvouve@gmail.com',
     'phone' => '1-657-244-6826',
+    'linkedin' => 'https://www.linkedin.com/in/mvouve/',
+    'github' => 'https://github.com/mvouve',
+    'bitbucket' => 'https://bitbucket.com/mvouve',
+    'location' => 'Orange County, California',
 
 
     /*

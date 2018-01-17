@@ -46,12 +46,9 @@
             <!-- Left List Starts -->
             <ul class="list-unstyled list-inline pull-left">
                 <li>
-                    <i class="fa fa-map-marker"></i>
-                    Orange County, California
-                </li>
+                    <i class="fa fa-map-marker"></i>{{ config('app.location') }}</li>
                 <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:{{ config('app.email') }}">{{ config('app.email') }}</a>
+                    <i class="fa fa-envelope"></i><a href="mailto:{{ config('app.email') }}">{{ config('app.email') }}</a>
                 </li>
             </ul>
             <!-- Left List Ends -->
@@ -62,13 +59,9 @@
                     {{ config('app.phone') }}
                 </li>
                 <li>&nbsp;</li>
-                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                <li><a href="https://www.linkedin.com/in/mvouve/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="http://github.com/mvouve"><i class="fa fa-github"></i></a></li>
-                <li><a href="http://bitbucket.com/mvouve"><i class="fa fa-bitbucket"></i></a></li>
-                <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                <li><a href="{{ config('app.linkedin') }}"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="{{ config('app.github') }}"><i class="fa fa-github"></i></a></li>
+                <li><a href="{{ config('app.bitbucket') }}"><i class="fa fa-bitbucket"></i></a></li>
             </ul>
             <!-- Right List Ends -->
         </div>
@@ -133,9 +126,9 @@
                 <div class="foot-column">
                     <h4 class="text-uppercase light">Follow Me</h4>
                     <ul class="list-unstyled list-inline social-media-links">
-                        <li><a href="https://www.linkedin.com/in/mvouve/"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="http://github.com/mvouve"><i class="fa fa-github"></i></a></li>
-                        <li><a href="http://bitbucket.com/mvouve"><i class="fa fa-bitbucket"></i></a></li>
+                        <li><a href="{{ config('app.linkedin') }}"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="{{ config('app.github') }}"><i class="fa fa-github"></i></a></li>
+                        <li><a href="{{ config('app.bitbucket') }}"><i class="fa fa-bitbucket"></i></a></li>
                     </ul>
                 </div>
             </div>
