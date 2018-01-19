@@ -425,7 +425,7 @@
       <thresholdMode>1</thresholdMode>
     </xunit>
     <hudson.plugins.jdepend.JDependRecorder plugin="jdepend@1.2.3">
-      <configuredJDependFile>build/logs/jdepend.xml</configuredJDependFile>
+      <configuredJDependFile>build/logs/</configuredJDependFile>
     </hudson.plugins.jdepend.JDependRecorder>
     <hudson.plugins.violations.ViolationsPublisher plugin="violations@0.7.11">
       <config>
