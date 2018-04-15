@@ -8,7 +8,6 @@ return [
      |
      | The email to appear in various places on the website.
      |
-     |
      */
     'email' => 'mvouve@gmail.com',
     'phone' => '1-657-244-6826',
@@ -183,6 +182,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Nwidart\Menus\MenusServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -241,7 +241,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Menu' => Nwidart\Menus\Facades\Menu::class,
     ],
 
 ];

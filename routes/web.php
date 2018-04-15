@@ -45,6 +45,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin', 'AdminController@index');
-Route::get('/admin/post/new', 'AdminPostController@new');
-Route::get('/admin/post/list', 'AdminPostController@list');
+Route::get('/admin', 'Admin\AdminController@index');
+Route::get('/admin/post/new', 'Admin\AdminPostController@new');
+Route::get('/admin/post/list', 'Admin\AdminPostController@list');

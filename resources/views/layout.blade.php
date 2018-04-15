@@ -159,8 +159,7 @@
     </div>
     <!-- Copyright Starts -->
     <div class="copyright text-center">
-        Marc Vouve &copy; 2018 All Rights Reserved. Based off
-        Architect &copy; 2015 All Rights Reserved. Designed by <a href="http://www.sainathchillapuram.com">Sainath Chillapuram</a>
+        Marc Vouve &copy; 2018 All Rights Reserved.
     </div>
     <!-- Copyright Ends -->
 </footer>
