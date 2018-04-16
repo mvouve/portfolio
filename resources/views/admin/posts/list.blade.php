@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('menu')
-    @include('admin.menu')
+    @include('admin.menu', ['post_type' => $post_type])
 @endsection
 @section('section-content')
 <table class="table">
