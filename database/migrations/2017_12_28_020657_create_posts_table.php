@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->longText('body');
             $table->string('featured_image');
             $table->integer('post_type')->unsinged();
+            $table->dateTime('published_at');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

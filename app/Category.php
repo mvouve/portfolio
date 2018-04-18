@@ -8,6 +8,8 @@ class Category extends Model
 {
     protected $table = 'categories';
 
+    public $checked;
+
     public function posts() {
         return $this->belongsToMany('App\Post');
     }

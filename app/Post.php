@@ -18,6 +18,6 @@ class Post extends Model
     }
 
     public function postType() {
-        return $this->hasOne('App\PostType', 'post_type');
+        return $this->hasOne('App\PostType', 'id', 'post_type');
     }
 }
