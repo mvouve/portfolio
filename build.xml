@@ -5,16 +5,16 @@
     <property name="src-dir" value="${basedir}" />
 
     <target name="build"
-        depends="build-common,phploc,phpdox,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
+        depends="build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
 
     <target name="build-clean"
-        depends="clean,build-common,phpdox,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
+        depends="clean,build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
 
     <target name="build-dox"
-        depends="build-common,phpdox,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
+        depends="build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
 
     <target name="build-dox-clean"
-        depends="clean,build-common,phpdox,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
+        depends="clean,build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
 
     <target name="build-parallel"
         depends="build-common,tools-parallel" />
@@ -35,7 +35,6 @@
             <antcall target="phpcpd" />
             <sequential>
                 <antcall target="phploc" />
-                <antcall target="phpdox" />
             </sequential>
         </parallel>
     </target>
@@ -137,13 +136,6 @@
             <arg value="--standard=${build-dir}/phpcs.xml" />
             <arg value="--ignore=${src-dir}/vendor"/>
             <arg path="${src-dir}" />
-        </exec>
-    </target>
-
-    <target name="phpdox" description="Generate API documentation using phpDox">
-        <exec executable="phpdox">
-            <arg value="-f" />
-            <arg value="${build-dir}/phpdox.xml" />
         </exec>
     </target>
 
