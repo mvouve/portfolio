@@ -135,13 +135,14 @@
 
     <target name="phploc" description="Measure project size using PHPLOC">
         <exec executable="phploc">
+           <arg value="--exclude"/>
+           <arg path="${src-dir}/vendor"/>
            <arg value="--log-csv" />
            <arg value="${build-dir}/logs/phploc.csv" />
            <arg value="--log-xml" />
            <arg value="${build-dir}/logs/phploc.xml" />
            <arg path="${src-dir}" />
-           <arg value="exclude"/>
-           <arg path="${src-dir}/vendor"/>
+
         </exec>
     </target>
 
