@@ -114,7 +114,7 @@
 
      <target name="phpcpd" description="Find duplicate code using PHPCPD">
         <exec executable="phpcpd">
-            <arg value="--exclude=${src-dir}vendor"/>
+            <arg value="--exclude=${src-dir}/vendor"/>
             <arg value="--log-pmd" />
             <arg value="${build-dir}/logs/pmd-cpd.xml" />
             <arg path="${src-dir}" />
@@ -125,7 +125,7 @@
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="phpcs">
             <arg value="--standard=${build-dir}/phpcs.xml" />
-            <arg value="--ignore=${src-dir}/vendor"/>
+            <arg value="--exclude=${src-dir}/vendor,${src-dir}/public"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
