@@ -114,8 +114,8 @@
 
      <target name="phpcpd" description="Find duplicate code using PHPCPD">
         <exec executable="phpcpd">
-            <arg value="--log-pmd" />
             <arg value="--exclude=${src-dir}vendor"/>
+            <arg value="--log-pmd" />
             <arg value="${build-dir}/logs/pmd-cpd.xml" />
             <arg path="${src-dir}" />
         </exec>
@@ -154,6 +154,8 @@
            <arg value="--log-xml" />
            <arg value="${build-dir}/logs/phploc.xml" />
            <arg path="${src-dir}" />
+           <arg value="exclude"/>
+           <arg path="${src-dir}/vendor"/>
         </exec>
     </target>
 
@@ -172,6 +174,8 @@
             <arg value="${build-dir}/phpmd.xml" />
             <arg value="--reportfile" />
             <arg value="${build-dir}/logs/pmd.xml" />
+            <arg value="--exclude"/>
+            <arg value="${src-dir}/vendor"/>
         </exec>
     </target>
 
