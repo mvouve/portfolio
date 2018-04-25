@@ -117,7 +117,7 @@
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="phpcs">
             <arg value="--standard=${build-dir}/phpcs.xml" />
-            <arg value="--ignore=${src-dir}/vendor/*,${src-dir}/public/*"/>
+            <arg value="--ignore=$*/vendor/*,*/public/*"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
