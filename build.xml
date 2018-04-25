@@ -10,12 +10,6 @@
     <target name="build-clean"
         depends="clean,build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
 
-    <target name="build-dox"
-        depends="build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
-
-    <target name="build-dox-clean"
-        depends="clean,build-common,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
-
     <target name="build-parallel"
         depends="build-common,tools-parallel" />
 
@@ -134,7 +128,7 @@
             <arg value="--report=checkstyle" />
             <arg value="--report-file=${build-dir}/logs/checkstyle.xml" />
             <arg value="--standard=${build-dir}/phpcs.xml" />
-            <arg value="--ignore=${src-dir}/vendor"/>
+            <arg value="--exclude=${src-dir}/vendor,${src-dir}/public"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
