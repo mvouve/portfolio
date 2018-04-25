@@ -93,6 +93,7 @@
             <arg value="--jdepend-xml=${build-dir}/logs/jdepend.xml" />
             <arg value="--jdepend-chart=${build-dir}/pdepend/dependencies.svg" />
             <arg value="--overview-pyramid=${build-dir}/pdepend/overview-pyramid.svg" />
+            <arg value="--ignore=${src-dir}/vendor"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
@@ -103,7 +104,10 @@
             <arg path="${build-dir}/logs" />
             <arg value="--source" />
             <arg path="${src-dir}" />
+            <arg value="--exclude" />
+            <arg path="${src-dir}/vendor"/>
             <arg value="--output" />
+
             <arg path="${build-dir}/code-browser" />
         </exec>
     </target>
@@ -111,6 +115,7 @@
      <target name="phpcpd" description="Find duplicate code using PHPCPD">
         <exec executable="phpcpd">
             <arg value="--log-pmd" />
+            <arg value="--exclude=${src-dir}vendor"/>
             <arg value="${build-dir}/logs/pmd-cpd.xml" />
             <arg path="${src-dir}" />
         </exec>
@@ -120,6 +125,7 @@
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="phpcs">
             <arg value="--standard=${build-dir}/phpcs.xml" />
+            <arg value="--ignore=${src-dir}/vendor"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
@@ -129,6 +135,7 @@
             <arg value="--report=checkstyle" />
             <arg value="--report-file=${build-dir}/logs/checkstyle.xml" />
             <arg value="--standard=${build-dir}/phpcs.xml" />
+            <arg value="--ignore=${src-dir}/vendor"/>
             <arg path="${src-dir}" />
         </exec>
     </target>
