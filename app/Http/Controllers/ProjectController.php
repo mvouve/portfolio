@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Category;
+use App\PostType;
 
 class ProjectController extends Controller
 {
@@ -21,7 +22,8 @@ class ProjectController extends Controller
     }
 
     public function showAll() {
-        $posts = Post::where('post_type', 2)->paginate(30);
+        $post_type = PostType::where('slug', 'project')->first();
+        $posts = $post_type->posts()->whereNotNull('published_at')->orderBy('created_at', 'desc')->take(3)->get();
         $categories = Category::take(10)->get();
 
         return view('portfolio', ['posts' => $posts, 'categories' => $categories]);

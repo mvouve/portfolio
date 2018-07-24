@@ -1,0 +1,21 @@
+.main-banner {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: #fff;
+
+  &.one {
+    background-image: url('/images/banners/main-banner-img-1.jpg');
+  }
+  &.two {
+    background-image: url('/images/banners/main-banner-img-2.jpg');
+  }
+  &.three {
+    background-image: url('/images/banners/main-banner-img-3.jpg');
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}

@@ -50,3 +50,7 @@ Route::get('/admin/list/{post_type}', 'Admin\AdminController@all');
 Route::get('/admin/new/{post_type}', 'Admin\AdminController@add');
 Route::get('/admin/edit/{id}', 'Admin\AdminController@edit');
 
+Route::post('/admin/edit/{id}', 'Admin\AdminController@save');
+
+Route::any('/admin/image/upload', 'Admin\ImageController@put');
+Route::any('/admin/image/list', 'Admin\ImageController@getList');

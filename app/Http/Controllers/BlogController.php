@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 use App\Post;
 use App\Category;
 use App\PostType;
+use Illuminate\View\View;
 
 class BlogController extends Controller
 {
@@ -27,10 +28,16 @@ class BlogController extends Controller
 
     public function __construct() {
         $this->PostType = PostType::where('slug', 'blog')->first();
-        $this->NewPosts = $this->PostType->posts()->orderBy('created_at', 'desc')->take(3)->get();
+
         $this->Categories = Category::inRandomOrder()->take(10)->get();
     }
 
+    /**
+     * Show single post
+     *
+     * @param $id integer ID of post to display.
+     * @return View blog.single
+     */
     public function show($id) {
         $post = Post::where('slug', $id)->first();
 
@@ -38,7 +45,7 @@ class BlogController extends Controller
     }
 
     public function showAll() {
-        $posts = $this->PostType->posts()->orderBy('created_at', 'desc')->paginate(10);
+        $posts = $this->PostType->posts()->whereNotNull('published_at')->orderBy('created_at', 'desc')->paginate(10);
 
         return view('blog', ['posts' => $posts, 'categories' => $this->Categories, 'new_posts' => $this->NewPosts]);
     }

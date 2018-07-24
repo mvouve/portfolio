@@ -1,0 +1,16 @@
+/* Slider Styles Starts */
+
+.camera_wrap h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.camera_caption {
+  width: 50%;
+  bottom: 50px !important;
+
+  > div {
+    padding-left: 120px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

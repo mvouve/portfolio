@@ -1,0 +1,47 @@
+.map {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  height: 400px;
+}
+.address-list {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  li {
+    padding-bottom: 25px;
+  }
+  li a {
+    color: #1c1c1c;
+  }
+  li a:hover,
+  li a:focus {
+    color: #fe4445;
+  }
+  .pull-left {
+    margin-right: 15px;
+  }
+  .pull-right {
+    margin-left: 15px;
+  }
+  .fa-map-marker {
+    margin-top: 5px;
+    font-size: 42px;
+  }
+  .fa-phone-square {
+    margin-top: 8px;
+    font-size: 32px;
+  }
+  .fa-envelope {
+    font-size: 28px;
+  }
+}
+.contact-status {
+  display: none;
+}
+#main-contact-form {
+  margin-top: 20px;
+  .btn-main {
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,22 @@
+.recent-post-block li.row + li.row {
+  margin-top: 15px;
+}
+.recent-post-block-img {
+  margin-top: 5px;
+}
+.recent-post-block-title {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  color: #fe4445;
+  text-transform: uppercase;
+}
+.recent-post-block-meta {
+  margin-bottom: 10px;
+}
+.recent-post-block-meta .fa {
+  margin-right: 5px;
+}
+.recent-post-block-meta,
+.recent-post-block-meta a {
+  color: #7f7f7f;
+}

@@ -24,7 +24,7 @@
 <section class="welcome">
     <div class="container text-center">
         <!-- Intro Text Starts -->
-        <div class="intro">
+        <div class="welcome__intro">
             <h2 class="main-color text-uppercase">Welcome</h2>
             <h4>I am a professional software engineer capable of building a project to suit your needs.</h4>
         </div>
@@ -33,7 +33,7 @@
         <div class="row">
             <!-- Box #1 Starts -->
             <div class="col-md-4 col-xs-12">
-                <div class="welcome-box">
+                <div class="welcome__box">
                     <h3 class="main-color text-uppercase">Who i Am</h3>
                     <p>
                         <img src="images/home/home-img1.jpg" alt="Who i Am" class="img-responsive">
@@ -46,7 +46,7 @@
             <!-- Box #1 Ends -->
             <!-- Box #2 Starts -->
             <div class="col-md-4 col-xs-12">
-                <div class="welcome-box">
+                <div class="welcome__box">
                     <h3 class="main-color text-uppercase">What i Offer</h3>
                     <p>
                         <img src="images/home/home-img2.jpg" alt="What i Offer" class="img-responsive">
@@ -59,7 +59,7 @@
             <!-- Box #2 Ends -->
             <!-- Box #3 Starts -->
             <div class="col-md-4 col-xs-12">
-                <div class="welcome-box">
+                <div class="welcome__box">
                     <h3 class="main-color text-uppercase">My Design Philosophy</h3>
                     <p>
                         <img src="images/home/home-img3.jpg" alt="My Creative Ideas" class="img-responsive">

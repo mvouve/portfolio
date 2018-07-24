@@ -9,6 +9,7 @@
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Author</th>
+            <th scope="col">Published</th>
             <th scope="col">Created At</th>
             <th scope="col">Updated At</th>
         </tr>

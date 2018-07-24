@@ -172,7 +172,7 @@
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/camera.min.js"></script>
 <script src="js/jquery.shuffle.modernizr.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_ppeBMMSABiIkYucLqqA7nZZh0-dfJmI&callback=initMap"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>

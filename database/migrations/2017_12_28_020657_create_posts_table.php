@@ -20,8 +20,8 @@ class CreatePostsTable extends Migration
             $table->string('slug')->unique();
             $table->longText('body');
             $table->string('featured_image');
-            $table->integer('post_type')->unsinged();
-            $table->dateTime('published_at');
+            $table->integer('post_type')->unsigned();
+            $table->dateTime('published_at')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

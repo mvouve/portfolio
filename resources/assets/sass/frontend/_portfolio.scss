@@ -1,0 +1,64 @@
+#portfolio-carousel {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+ul {
+  &#gallery-filter {
+    li {
+      padding-right: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    li + li {
+      padding-left: 18px;
+      border-left: 1px solid #1c1c1c;
+    }
+    li a {
+      font-size: 24px;
+      color: #1c1c1c;
+      font-family: 'BenchNine', sans-serif;
+    }
+    li a.active,
+    li a:hover,
+    li a:focus {
+      color: #fe4445;
+      text-decoration: none;
+    }
+  }
+
+  &#gallery-grid {
+    margin: 0 -10px;
+    padding: 0;
+    list-style:none;
+    overflow: hidden;
+
+    li {
+      margin-top: 45px;
+    }
+    .col2 li {
+      min-height: 514px;
+      height: auto;
+    }
+    .col3 li {
+      min-height: 394px;
+      height: auto;
+    }
+    .col4 li {
+      min-height: 335px;
+      height: auto;
+    }
+     li h5 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      color: #fe4445;
+    }
+    li .btn-main {
+      margin-top: 10px;
+    }
+    li h5,
+    li .btn-main {
+      text-transform: uppercase;
+    }
+  }
+}

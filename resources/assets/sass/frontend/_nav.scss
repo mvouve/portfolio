@@ -1,0 +1,66 @@
+#nav {
+  background-color: #fff;
+  font-family: 'BenchNine', sans-serif;
+  text-transform: uppercase;
+  .navbar {
+    margin-bottom: 0;
+    min-height: 100px;
+  }
+  .navbar-brand {
+    padding-top: 27px;
+    height: auto !important;
+  }
+  .navbar-static-top {
+    background: none;
+    border: none;
+  }
+  .navbar-nav > li > a {
+    font-size: 20px;
+    font-weight: normal;
+    color: #2c2c2c;
+  }
+   i.fa-angle-down {
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  .navbar-nav > li.active > a,
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    background: none;
+  }
+  .nav {
+    margin-top: 28px !important;
+  }
+  .navbar-nav > li:hover > a,
+  .navbar-nav > li.active > a,
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    color: #fe4445;
+  }
+  .dropdown-menu {
+    background-color: #2c2c2c;
+    padding: 10px 0;
+    left: 0;
+    border: none;
+  }
+  .dropdown-menu > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+
+  }
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background-color: #535353;
+  }
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    background-color: #fe4445;
+  }
+}

@@ -1,0 +1,20 @@
+.top-bar {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #2c2c2c;
+  color: #bdbdbd;
+
+  a {
+    color: #bdbdbd;
+  }
+  a:hover {
+    color: #fff;
+  }
+  ul.pull-left i.fa,
+  ul i.fa-phone {
+    margin-right: 5px;
+  }
+  ul.pull-left li + li {
+    margin-left: 15px;
+  }
+}

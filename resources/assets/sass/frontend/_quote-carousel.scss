@@ -1,0 +1,28 @@
+.quote-carousel {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('/images/home/quote-carousel-bg-img.jpg');
+  .item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #b9b9b9;
+  }
+  .item .img-responsive {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-indicators {
+    bottom: -40px;
+  }
+  .carousel-indicators li {
+    width: 18px;
+    height: 18px;
+    background-color: #dfdfdf;
+    border: none;
+  }
+  .carousel-indicators li.active {
+    margin: 1px;
+    background-color: #fe4445;
+  }
+}
